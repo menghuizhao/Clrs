@@ -31,10 +31,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sort\InsertionSort.cs" />
+    <Compile Include="Sort\InsertionSortExecutor.cs" />
+    <Compile Include="Creators\Create.cs" />
+    <Compile Include="Sort\MergeSortExecutor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Sort\" />
+    <Folder Include="Creators\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

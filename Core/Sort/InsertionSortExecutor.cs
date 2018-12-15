@@ -1,11 +1,14 @@
 ﻿namespace Core.Sort
 {
-    public class InsertionSort
+    /// <summary>
+    /// Insertion sort. Chapter 2.1
+    /// </summary>
+    public static class InsertionSortExecutor
     {
-        public void SortInPlace(int[] nums)
+        public static int[] InsertionSort(this int[] nums)
         {
             if(nums == null || nums.Length <= 1){
-                return;
+                return nums;
             }
             for (int i = 0; i < nums.Length; i++) {
                 var key = nums[i];
@@ -16,9 +19,8 @@
                     j--;
                 }
                 nums[j + 1] = key;
-
             }
-
+            return nums;
         }
     }
 }
